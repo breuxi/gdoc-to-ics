@@ -53,7 +53,18 @@ I recommend using Docker to run this app. You can set the preferred ip and port 
 
 ### Docker
 
+```docker
+docker run -e GDTICS_LISTEN=:8080 -p 8080:8080 breuxi/gdoc-to-ics
+```
+
 ### Manual Install
+
+```bash
+git clone https://github.com/breuxi/gdoc-to-ics.git
+go mod download
+go build .
+./gdoc-to-ics
+```
 
 ## Contribute
 
